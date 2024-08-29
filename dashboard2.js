@@ -27,11 +27,11 @@ function tblclick(){
 function tblclick2(){
     v=document.getElementById("tbl2").style.display
     if(v=='none'){
-        document.getElementById("tbl2").style.display="block"
+        v=document.getElementById("tbl2").style.display="block"
     }
     else
     {
-        document.getElementById("tbl2").style.display="none"
+        v=document.getElementById("tbl2").style.display="none"
     }
 }
 function tblclick3(){

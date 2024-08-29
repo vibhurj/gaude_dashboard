@@ -14,33 +14,23 @@ else{
 }
     
 }
-function tblclick(){
-    v=document.getElementById("tbl1").style.display
-    if(v=='none'){
+function tblenter1(){
         document.getElementById("tbl1").style.display="block"
-    }
-    else
-    {
-        document.getElementById("tbl1").style.display="none"
-    }
 }
-function tblclick2(){
-    v=document.getElementById("tbl2").style.display
-    if(v=='none'){
-        v=document.getElementById("tbl2").style.display="block"
-    }
-    else
-    {
-        v=document.getElementById("tbl2").style.display="none"
-    }
+function tblout1(){
+    document.getElementById("tbl1").style.display="none"
 }
-function tblclick3(){
-    v=document.getElementById("tbl3").style.display
-    if(v=='none'){
-        document.getElementById("tbl3").style.display="block"
-    }
-    else
-    {
-        document.getElementById("tbl3").style.display="none"
-    }
+
+function tblenter2(){
+    document.getElementById("tbl2").style.display="block"
+}
+function tblout2(){
+document.getElementById("tbl2").style.display="none"
+}
+
+function tblenter3(){
+    document.getElementById("tbl3").style.display="block"
+}
+function tblout3(){
+document.getElementById("tbl3").style.display="none"
 }

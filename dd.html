@@ -1,0 +1,102 @@
+<div class="container mt-5">
+    <div class="row row3">
+        <div class=" col">
+            <div class="allasets card h-100">
+                <div class="d-flex mb-2">
+                <h6>Overall Assets</h6>
+                <div class="dropdown">
+                    <select class="select">
+                        <option>Branches</option>
+                        <option>Head Office</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <p>Electrinics</p>
+                    <p>1</p>
+                </div>
+                <div class="progress d-block mb-3" style="width:100%">
+                    <div class="progress-bar" style="width:10%">
+                    1
+                    </div>
+                    </div>
+                <div class="d-flex">
+                    <p>Vehicles</p>
+                    <p>1</p>
+                </div>
+                <div class="progress d-block mb-3" style="width:100%">
+                    <div class="progress-bar" style="width:10%">
+                    1
+                    </div>
+                    </div>
+                <div class="d-flex mt-2">
+                    <p>Furnitures</p>
+                    <p>1</p>
+                </div>
+                <div class="progress d-block" style="width:100%">
+                    <div class="progress-bar" style="width:10%">
+                    1
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class=" col">
+            <div class="assetsts card h-100">
+                <div class="d-flex mb-2 ">
+                    <h6>Assets Status</h6>
+                    <div class="dropdown">
+                        <select class="select">
+                            <option>Branches</option>
+                            <option>Head Office</option>
+                        </select>
+                        </div>
+                    </div>
+                <div id="chart">
+                    <script>
+                        var options = {
+  series: [44, 55, 13, 43, 22],
+  chart: {
+  width: 380,
+  type: 'pie',
+  
+},
+
+labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+responsive: [{
+  breakpoint: 1000,
+  options: {
+    chart: {
+      width: 350
+    },
+    responsive: [
+{
+breakpoint: 1000,
+options: {
+plotOptions: {
+  bar: {
+   
+    horizontal: false
+  }
+},
+legend: {
+  position: "bottom"
+}
+}
+}
+],
+    legend: {
+      position: 'bottom'
+    }
+  }
+}]
+};
+
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
